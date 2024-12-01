@@ -29,13 +29,13 @@ export function UsersPagination() {
             </TableRow>
          </thead>
          <tbody>
-            {data.slice((page - 1) * 10, page * 10).map((user) => {
+            {data.slice((page - 1) * 10, page * 10).map((item) => {
                return (
-                  <TableRow key={user.id}>
-                     <TableCell>{user.id}</TableCell>
-                     <TableCell>{user.firstName}</TableCell>
-                     <TableCell>{user.lastName}</TableCell>
-                     <TableCell otherClasses='max-sm:hidden'>{user.email}</TableCell>
+                  <TableRow key={item.id}>
+                     <TableCell>{item.id}</TableCell>
+                     <TableCell>{item.firstName}</TableCell>
+                     <TableCell>{item.lastName}</TableCell>
+                     <TableCell otherClasses='max-sm:hidden'>{item.email}</TableCell>
                   </TableRow>
                );
             })}
