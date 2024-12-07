@@ -45,11 +45,11 @@ export function UsersPagination() {
             </tbody>
             <tfoot>
                <tr>
-                  <TableCell colSpan={2} otherClasses='text-sm'>
-                     {currentItems.length} de {data.length}
-                  </TableCell>
-                  <TableCell colSpan={2} otherClasses='text-sm text-right'>
-                     <div className='flex max-sm:flex-col items-center justify-end gap-4 py-3'>
+                  <TableCell colSpan={4} otherClasses='text-sm'>
+                     <div className='flex justify-between gap-4 py-3'>
+                        <span>
+                           {currentItems.length} de {data.length}
+                        </span>
                         <span>
                            Página {page} de {totalPages}
                         </span>
