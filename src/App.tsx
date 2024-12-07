@@ -13,7 +13,7 @@ function App() {
             </div>
          </main>
          <footer>
-            <p className='flex gap-1 justify-center light-text dark:dark-text text-sm p-4 border-t border-zinc-400'>
+            <p className='flex gap-1 justify-center text-sm p-4 border-t border-zinc-400'>
                Desenvolvido por{' '}
                <a
                   href='https://github.com/philipeoliveira'
